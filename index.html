@@ -22,7 +22,7 @@
 }
 </style>
 <script>
-    function addTodo(){
+    function addTodo()   {
 
       todolist.innerHTML += `
       <li class="mdl-list__item">
@@ -37,7 +37,7 @@
             </span>
             </li>
     `;
-    todofield.value  = ``;
+      todofield.value  = ``;
 
     }
 </script>
@@ -48,7 +48,7 @@
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
         <!-- Title -->
-        <span class="mdl-layout-title">To do Liste</span>
+        <span class="mdl-layout-title">To do List</span>
         <!-- Add spacer, to align navigation to the right -->
         <div class="mdl-layout-spacer"></div>
         <!-- Navigation. We hide it in small screens. -->
@@ -73,7 +73,7 @@
     <div class="page-content">
       <!-- Your content goes here -->
      
-        <form onsubmit="addTodo()">
+        <form onsubmit="addTodo(); return false;">
           <div class="mdl-textfield mdl-js-textfield">
             <input class="mdl-textfield__input" type="text" id="todofield">
             <label class="mdl-textfield__label" for="todofield">To do einfügen</label>
